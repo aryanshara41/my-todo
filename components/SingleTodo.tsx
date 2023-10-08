@@ -8,7 +8,7 @@ type Props = {
 
 const SingleTodo: FC<Props> = ({ text }) => {
   return (
-    <div className="border-2 p-2 rounded-xl shadow-md shadow-gray-600 ">
+    <div className=" border-2 p-2 rounded-xl shadow-md shadow-gray-600 ">
       {text}
     </div>
   );

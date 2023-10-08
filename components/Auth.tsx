@@ -27,11 +27,11 @@ const Auth: FC<Props> = ({ isLogin }) => {
         password,
       });
 
-      // put this user in local storage
-      localStorage.setItem("user", JSON.stringify(res.data.user));
+      console.log(res);
 
       router.push("/");
     } catch (err: any) {
+      console.log(err);
       toast.error(err.message);
     } finally {
       setPassword("");
